@@ -3,7 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family:'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 
 .logo {
@@ -12,7 +15,7 @@
   margin-bottom: 10px;
 }
 .nav {
-    margin-bottom: 13px;
+  margin-bottom: 13px;
 }
 
 .ul {
@@ -21,15 +24,42 @@
 }
 
 .li {
-    display: inline;
+  display: inline;
 }
 
 .link {
-    color: #4a4a4a;
-
+  color: #4a4a4a;
 }
 
-
+.main {
+  background-color: #3cdbc0;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.span {
+  display: block;
 }
 
+@media all and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+
+  .ul {
+    padding-right: 30px;
+  }
+
+  .main {
+    font-size: 40px;
+  }
 }
